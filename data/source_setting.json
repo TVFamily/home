@@ -1,0 +1,7 @@
+[
+    {
+        "source":"bilibili",
+        "user_agent":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:78.0) Gecko/20100101 Firefox/78.0",
+        "headers":"referer:https://www.bilibili.com"
+    }
+]
