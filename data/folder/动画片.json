@@ -1,7 +1,37 @@
 [
     {
         "url": "https://www.bilibili.com/video/BV1jS4y1a7Py",
-        "folder":"动画片",
-        "source":"bilibili"
+        "source":"bilibili",
+        "title":"布鲁伊 1"
+    },
+    {
+        "url": "https://www.bilibili.com/video/BV1FV411H7Gx",
+        "source":"bilibili",
+        "title":"小小科学探索家"
+    },
+    {
+        "url": "https://www.bilibili.com/video/BV1uX4y1u7nM",
+        "source":"bilibili",
+        "title":"小小世界 1"
+    },
+    {
+        "url": "https://www.bilibili.com/video/BV1y44y1r7AD",
+        "source":"bilibili",
+        "title":"小小世界 2"
+    },
+    {
+        "url": "https://www.bilibili.com/video/BV1Kt411H7vN",
+        "source":"bilibili",
+        "title":"Charlie.And.Lola"
+    },
+    {
+        "url": "https://www.bilibili.com/video/BV1CL411T7dJ",
+        "source":"bilibili",
+        "title":"影响孩子性格一生的情商教育课"
+    },
+    {
+        "url": "https://www.bilibili.com/video/BV1iY411t7g7",
+        "source":"bilibili",
+        "title":"平博士密码"
     }
 ]
