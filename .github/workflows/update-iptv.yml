@@ -1,0 +1,26 @@
+name: update-iptv
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '0 0 * * *'
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v2
+        if: ${{ !env.ACT }}
+        with:
+          node-version: '14'
+          cache: 'npm'
+      - run: npm install
+      - run: npm run pg:sync
+      - run: |
+          git config user.name "GitHub Actions Bot"
+          git config user.email "<>"
+          if [ -n "$(git status -s)" ]; then
+            npm run meta:version iptv
+            git add .
+            git commit -m "[Bot] Update iptv streams"
+            git push
+          fi
