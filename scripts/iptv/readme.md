@@ -1,0 +1,99 @@
+# IPTV:
+* CCTV：http://tv.cctv.com/live/m/
+* https://github.com/iptv-org/iptv
+* https://img.whalenas.com:283/file/iptv.m3u
+* https://github.com/goolguy007/radioer
+* https://github.com/goolguy007/MyIPTV
+* https://github.com/vamoschuck/TV
+* https://github.com/zqc11608/iptv
+* http://iptv807.com/
+* https://github.com/biancangming/wtv
+* https://github.com/hd9211/maotv
+* https://github.com/takagen99/channel
+* https://github.com/boly4189/tv1
+* https://github.com/atsushi444/iptv
+* https://github.com/xfcjp/xfcjp.github.io
+* https://github.com/Free-TV/IPTV
+* https://github.com/imDazui/Tvlist-awesome-m3u-m3u8
+* https://img.whalenas.com:283/file/iptv.m3u
+* https://github.com/bdnu/bdnu.github.io
+* https://adultiptv.net/
+* https://github.com/qwerttvv/Beijing-IPTV
+* https://github.com/SPX372928/MyIPTV
+* https://github.com/LiuYi0526/IPTV
+* https://github.com/BurningC4/Chinese-IPTV
+* https://github.com/cntv2020/tv
+* https://github.com/jhaines2010/iptv
+* https://github.com/kusnadipepenk/ntn
+* https://github.com/longhai/iptv
+* https://github.com/coodertv/IPTVM3U8
+* https://github.com/Wanjieming/IPTV
+* https://github.com/Server21/IPTV-Pro
+* https://github.com/treshi/daily-iptv.al
+* https://github.com/islercn/BeiJing-Unicom-IPTV-List
+* https://github.com/WMF2020/IPTV
+* https://github.com/fotvnetwork/iptv-free
+* https://github.com/thanh51/repository.thanh51
+* https://github.com/krogsbell/IPTV
+* https://github.com/lylehust/Chinese-IPTV
+* https://github.com/eliashussary/iptvcat-scraper
+* https://github.com/Karnei4/Karnei4.github.io
+* https://github.com/geonsey/Free2ViewTV
+* https://github.com/wudongdefeng/IPTVCAT
+* https://github.com/snow922841/m3ulist
+* https://github.com/lamdow8
+* https://github.com/kltv-2021/2021TV
+* https://github.com/pcccw/Ark
+* https://github.com/bitsbb01/m3u8_creator
+* https://github.com/imDazui/Tvlist-awesome-m3u-m3u8
+* https://genome.ch.bbc.co.uk/
+
+
+# EPG
+* http://epg.51zmt.top:8000/e.xml
+* CCTV节目官网：http://tv.cctv.com/
+
+
+# Music
+* https://sao.fm/
+* https://www.lofi.cafe/
+* https://github.com/louis77/tuner
+* http://radio.garden/visit/singapore/5TJWgfJJ
+
+
+# 2022最新猫影视接口资源
+* https://c1n.cn/2
+* http://c1n.cn/mao
+* http://gg.gg/cccvvv
+* http://gg.gg/maotv10
+* http://gg.gg/maotv28
+* https://maoys.c1n.cn
+* https://maotv.c1n.cn
+* https://wds.ecsxs.com/212757.json
+* https://wds.ecsxs.com/213821.json
+* https://wds.ecsxs.com/213679.json
+* https://wds.ecsxs.com/213766.txt
+* https://wds.ecsxs.com/213013.json
+* https://pastebin.com/raw/GG51y0JG
+* https://wds.ecsxs.com/212010.json
+* https://wds.ecsxs.com/213313.json
+* https://wds.ecsxs.com/216537.json
+* https://wds.ecsxs.com/216731.json
+* https://pastebin.com/raw/FuMsfJWw
+* https://pastebin.com/raw/KGRduBqa
+* https://pastebin.com/raw/yMNq26ND
+* https://wds.ecsxs.com/220912.json
+* http://www.nihaogege.com/cat/yl.js
+* https://tool.wotianna.com/mysjk.json
+* http://pglblb.test.upcdn.net/mao.json
+* http://pglblb.test.upcdn.net/20220216.json
+* https://cdn.jsdelivr.net/gh/zxfccmm4/steve@main/steve3
+* https://tvapp.guilaile.cn/wp-content/uploads/2021/08/dshzjk.txt
+* https://codeberg.org/attachments/36e750cc-e7b0-4a19-a985-22ffce164a2b
+* http://118.190.244.195/gengduoziyuansouweixingongzhonghaobktx123/0226.json
+* https://c1n.cn/cat
+* https://c1n.cn/mao
+* https://dwurl.cn/Ptc7HI
+
+
+

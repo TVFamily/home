@@ -1,0 +1,15 @@
+{
+    "name": "family_tv",
+    "version": "0.0.1",
+    "author": "maskx",
+    "private": true,
+    "scripts": {
+        "pg:sync": "node scripts/iptv/refresh_data.js",
+        "meta:version": "node scripts/version.js"
+    },
+    "dependencies": {
+        "fs-extra": "^10.0.0",
+        "iptv-playlist-parser": "^0.11.0",
+        "sqlite3": "^5.0.8"
+    }
+}
