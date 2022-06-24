@@ -19,15 +19,15 @@ let build_metadata = async function (sql, par, file) {
     });
 };
 let build_all_meta = async function () {
-    await build_metadata('select * from country where 1=?;', 1, pt.join(__dirname, '../../src/data/iptv/country.json'))
+    await build_metadata('select * from country where 1=?;', 1, pt.join(__dirname, '../../data/iptv/country.json'))
         .then(async (countrys) => {
             for (let i = 0; i < countrys.length; i++) {
                 await build_metadata("select * from subdivision where country=?",
                     countrys[i].code,
-                    pt.join(__dirname, '../../src/data/iptv/', countrys[i].code, '/subdivision.json'));
+                    pt.join(__dirname, '../../data/iptv/', countrys[i].code, '/subdivision.json'));
                 await build_metadata('select c.* from city c join subdivision s on s.name=c.subdivision where s.country=?',
                     countrys[i].code,
-                    pt.join(__dirname, '../../src/data/iptv/', countrys[i].code, '/city.json'));
+                    pt.join(__dirname, '../../data/iptv/', countrys[i].code, '/city.json'));
             }
         });
 }

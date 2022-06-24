@@ -33,7 +33,7 @@ stream.build = async function (country) {
                     reject(err);
                 }
                 else {
-                    let file = pt.join(__dirname, '../../src/data/iptv/', country.code, '/stream.json');
+                    let file = pt.join(__dirname, '../../data/iptv/', country.code, '/stream.json');
                     if (!fs.existsSync(file)) {
                         fs.createFileSync(file);
                     }

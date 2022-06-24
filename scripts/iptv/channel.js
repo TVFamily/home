@@ -25,7 +25,7 @@ channel.build = async function (country) {
                     reject(err);
                 }
                 else {
-                    let file = pt.join(__dirname, '../../src/data/iptv/', country.code, '/channel.json');
+                    let file = pt.join(__dirname, '../../data/iptv/', country.code, '/channel.json');
                     if (!fs.existsSync(file)) {
                         fs.createFileSync(file);
                     }

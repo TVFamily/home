@@ -3,7 +3,7 @@ const pt = require('path');
 
 async function main() {
     if (process.argv.length>2) {
-        let path = pt.join(__dirname, '../src/data/version.json')
+        let path = pt.join(__dirname, '../data/version.json')
         let now = new Date();
         let newVersion = '' + now.getFullYear() + (now.getMonth() + 1) + now.getDate() + now.getHours() + now.getMinutes() + now.getSeconds() + now.getMilliseconds();
         var j = fs.readJSONSync(path);
