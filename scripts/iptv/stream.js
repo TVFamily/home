@@ -6,7 +6,7 @@ let stm_add = db.prepare('INSERT or ignore INTO stream(channel,url,http_referrer
     (err) => {
         if (err) console.log(err);
     });
-let stm_build = db.prepare("select s.* from stream s join channel c on c.id=s.channel where c.country=?",
+let stm_build = db.prepare("select s.* from stream s",
     (err) => {
         if (err) console.log(err);
     });
@@ -24,30 +24,23 @@ stream.add = function (s) {
         });
     });
 };
-stream.build = async function (country) {
+stream.build = async function () {
     return new Promise(function (resolve, reject) {
-        if (country) {
-            stm_build.all(country.name, (err, rows) => {
-                if (err) {
-                    console.log(err);
-                    reject(err);
+        stm_build.all((err, rows) => {
+            if (err) {
+                console.log(err);
+                reject(err);
+            }
+            else {
+                let file = pt.join(__dirname, '../../data/iptv/stream.json');
+                if (!fs.existsSync(file)) {
+                    fs.createFileSync(file);
                 }
-                else {
-                    let file = pt.join(__dirname, '../../data/iptv/', country.code, '/stream.json');
-                    if (!fs.existsSync(file)) {
-                        fs.createFileSync(file);
-                    }
-                    fs.writeJSONSync(file, rows, 'utf8', 'w');
-                    resolve();
-                }
-            });
-        } else {
-            db.all('select code,name from country',async (err, rows) => {
-                for (let i = 0; i < rows.length; i++) {
-                    await stream.build(rows[i]);
-                }
-            });
-        }
+                fs.writeJSONSync(file, rows, 'utf8', 'w');
+                resolve();
+            }
+        });
+
     });
 }
 module.exports = stream;

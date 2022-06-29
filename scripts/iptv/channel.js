@@ -5,7 +5,7 @@ let now = new Date();
 let t = '' + now.getFullYear() + (now.getMonth() + 1) + now.getDate() + now.getHours() + now.getMinutes() + now.getSeconds() + now.getMilliseconds();
 let channel = {};
 let stm_findchannel = db.prepare('select id from channel where id=?');
-let stm_build = db.prepare("select * from channel where country=?");
+let stm_build = db.prepare("select * from channel");
 channel.log_miss = function (c) {
     return new Promise(function (resolve, reject) {
         stm_findchannel.get(c.id, (err, row) => {
@@ -16,30 +16,22 @@ channel.log_miss = function (c) {
         });
     });
 };
-channel.build = async function (country) {
+channel.build = async function () {
     return new Promise(function (resolve, reject) {
-        if (country) {
-            stm_build.all(country.code, (err, rows) => {
-                if (err) {
-                    console.log(err);
-                    reject(err);
+        stm_build.all((err, rows) => {
+            if (err) {
+                console.log(err);
+                reject(err);
+            }
+            else {
+                let file = pt.join(__dirname, '../../data/iptv/channel.json');
+                if (!fs.existsSync(file)) {
+                    fs.createFileSync(file);
                 }
-                else {
-                    let file = pt.join(__dirname, '../../data/iptv/', country.code, '/channel.json');
-                    if (!fs.existsSync(file)) {
-                        fs.createFileSync(file);
-                    }
-                    fs.writeJSONSync(file, rows, 'utf8', 'w');
-                    resolve();
-                }
-            });
-        } else {
-            db.all('select code,name from country', async (err, rows) => {
-                for (let i = 0; i < rows.length; i++) {
-                    await channel.build(rows[i]);
-                }
-            });
-        }
+                fs.writeJSONSync(file, rows, 'utf8', 'w');
+                resolve();
+            }
+        });
     });
 }
 module.exports = channel;
